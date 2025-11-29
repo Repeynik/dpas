@@ -20,7 +20,7 @@
            (take 10 (sieve (iterate inc 2)))))))
 
 (deftest more-primes-test
-  (testing "11–15-е простые числа"
+  (testing "11-15-е простые числа"
     (is (= [31 37 41 43 47]
            (->> (sieve (iterate inc 2))
                 (drop 10)
